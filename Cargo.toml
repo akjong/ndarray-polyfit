@@ -1,0 +1,20 @@
+[package]
+name = "ndarray-polyfit"
+version = "0.1.0"
+edition = "2021"
+authors = ["Bob Liu <akagi201@gmail.com>"]
+description = "Polynomial fitting based on ndarray"
+documentation = "https://docs.rs/ndarray-polyfit"
+repository = "https://github.com/akjong/ndarray-polyfit"
+keywords = ["ndarray", "polyfit", "polynomial"]
+license = "Apache-2.0"
+readme = "./README.md"
+categories = ["algorithms", "science"]
+
+[dependencies]
+ndarray = "0.16.1"
+ndarray-linalg = { version = "0.17.0", features = ["openblas-static"] }
+num-traits = "0.2.19"
+
+[dev-dependencies]
+approx = "0.5.1"
